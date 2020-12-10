@@ -40,7 +40,7 @@ class BoostAT167 < Formula
     end
 
     # libdir should be set by --prefix but isn't
-    bootstrap_args = ["--prefix=#{prefix}", "--libdir=#{lib}"]
+    bootstrap_args = ["--prefix=#{prefix}", "--libdir=#{lib}", "compiler.balcklist clang"]
 
     if build.with? "icu4c"
       icu4c_prefix = Formula["icu4c"].opt_prefix
