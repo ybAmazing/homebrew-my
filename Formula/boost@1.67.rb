@@ -66,7 +66,12 @@ class BoostAT167 < Formula
             "--layout=tagged",
             "--user-config=user-config.jam",
             "-sNO_LZMA=1",
-            "--with-program_options --with-filesystem --with-system --with-chrono --with-thread --with-test",
+            "--with-program_options",
+            "--with-filesystem",
+            "--with-system",
+            "--with-chrono",
+            "--with-thread",
+            "--with-test",
             "install"]
 
     if build.with? "single"
